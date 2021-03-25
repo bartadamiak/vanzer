@@ -1,0 +1,90 @@
+
+.services {
+    background: url("../../images/services-bg.png");
+    background-size: cover;
+}
+
+.left-nav3 {
+    margin-top: 5rem;
+}
+
+.services-grid {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 8.2rem;
+   
+    align-self: end;
+}
+
+.services-title {
+    grid-column: 2 / 6;
+    grid-row-start: 2;
+    color: #f7f7f7;
+    font-size: 2.7rem;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.services-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 110%;
+    background: #ff4200;
+    position: absolute;
+    bottom: 0;
+}
+
+.services-options {
+    grid-column: 2 / 6;
+    grid-row-start: 3;
+}
+
+.option {
+    color: #737373;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0.8rem 0;
+}
+
+.marked {
+    color: #b3b3b3;
+}
+
+.services-about {
+    grid-column: 8 / 12;
+    grid-row: 4 / 5;
+}
+
+.about-title {
+    color: #b3b3b3;
+    font-size: 1.2rem;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.first-letter {
+    position: absolute;
+    left: -2rem;
+    top: -3rem;
+    color: rgba($color: #ff4200, $alpha: 0.3);
+    font-weight: 600;
+    font-size: 5.8rem;
+}
+
+.about-text {
+    color: #999999;
+    font-family: 'Lato';
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+}
